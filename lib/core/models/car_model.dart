@@ -23,9 +23,8 @@ class CarModel extends Vehicle {
     _init();
   }
 
-  CarModel.bike({
-    CarType? carType,
-  })  : carType = carType ?? CarType.bike,
+  CarModel.bike()
+      : carType = CarType.bike,
         super(
           maxSpeed: 30,
           minSpeed: 10,
@@ -34,18 +33,16 @@ class CarModel extends Vehicle {
         ) {
     _init();
   }
-  CarModel.motorcycle({
-    CarType? carType,
-  })  : carType = carType ?? CarType.bike,
+  CarModel.motorcycle()
+      : carType = CarType.motorcycle,
         super(
           maxSpeed: 376.363,
           minSpeed: 85.5,
           wheelCount: 2,
           weight: 136.9,
         );
-  CarModel.car({
-    CarType? carType,
-  })  : carType = carType ?? CarType.bike,
+  CarModel.car()
+      : carType = CarType.car,
         super(
           maxSpeed: 278,
           minSpeed: 22.4,
@@ -55,9 +52,8 @@ class CarModel extends Vehicle {
     _init();
   }
 
-  CarModel.truck({
-    CarType? carType,
-  })  : carType = carType ?? CarType.bike,
+  CarModel.truck()
+      : carType = CarType.truck,
         super(
           maxSpeed: 85.6,
           minSpeed: 3.5,
